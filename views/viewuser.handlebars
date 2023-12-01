@@ -1,7 +1,27 @@
+
 {{#if auth}}
+<style>
+    .container{
+        margin-top: 30px;
+    }
+   
+</style>
 
-<h2>O usuário {{user.name}} tem {{user.age}} anos de idade!</h2>
+<div class="container">
+    <h1>Carro Cadastrado</h1>
+<h5>Nome do carro: {{user.nome}}</h5><br>
+<h5>Nome da marca: {{user.marca}}</h5><br>
+<h5>Potência do motor: {{user.potencia}}</h5><br>
+<h5>Cor: {{user.cor}}</h5><br>
+<h5>Ano de Fabricação: {{user.fabricacao}}</h5><br>
 
+<div class="row">
+    <div class="col-2">
 <a href="/">Home</a>
+</div>
+<div class="col-2">
 <a href="/users/add">Novo Usuário</a>
+</div>
+</div>
+</div>
 {{/if}}
